@@ -127,9 +127,9 @@ func generateFeed(username string, tweetList []Tweet) (string, error) {
 
 	for _, tweet := range tweetList {
 		item := &feeds.Item{
-			Title:       fmt.Sprintf("@%s did LIKE a tweet of %s", username, tweet.AuthorScreenName),
+			Title:       fmt.Sprintf("@%s liked %s", username, tweet.AuthorScreenName),
 			Link:        &feeds.Link{Href: tweet.URL},
-			Description: fmt.Sprintf("@%s did LIKE %s tweet.", username, tweet.URL),
+			Description: tweet.Text,
 			Created:     tweet.DateTime,
 			Id:          tweet.URL,
 		}

@@ -6,7 +6,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/kenchan0130/twitter-like-feed/routers"
+	"github.com/shariq/twitter-like-feed/routers"
 )
 
 func main() {
