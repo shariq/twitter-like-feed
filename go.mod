@@ -1,4 +1,4 @@
-module github.com/kenchan0130/twitter-like-feed
+module github.com/shariq/twitter-like-feed
 
 go 1.14
 
